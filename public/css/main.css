@@ -1,0 +1,16 @@
+/* applies to anything of class "example-class-selector" */
+.example-class-selector {
+	margin-top: 2em;
+}
+
+/* applies to any <p> descendants of an element of class "example-class-selector" */
+.example-class-selector p {
+	/* Colors are in hexadecimal: http://www.colorpicker.com/ */	
+	color: #CC00AA;
+}
+
+/* Make sure to comment */
+
+body { 
+    padding-top: 65px; /* To make sure the nav doesn't cover the content */  
+}
