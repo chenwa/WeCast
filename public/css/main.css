@@ -9,8 +9,73 @@
 	color: #CC00AA;
 }
 
+.page-title {
+  position:relative;
+  left:19%;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
 /* Make sure to comment */
 
 body { 
     padding-top: 65px; /* To make sure the nav doesn't cover the content */  
 }
+
+.add {
+	right: 5%;
+	bottom: 5%;
+	position: absolute;
+}
+.back {
+	position:absolute;
+	bottom:0;
+}
+
+.col-xs-4 span {
+	margin-left: 20px;
+}
+#recording_status {
+	margin: auto;
+	width: 50%;
+	padding-top: 20%;
+}
+
+#recording_time {
+	margin-left: auto;
+	padding-left: 100px;
+}
+
+#reminder_title {
+	margin: auto;
+	padding-left: 5px;
+	padding-top: 5%;
+
+}
+
+#round_bookmark, #round_camera {
+	padding-top: 10px;
+	margin-left:10px;
+	padding-top:5%;
+}
+
+#the_5th_row {
+	margin: auto;
+	margin-top: 10px;
+	padding-top:5%;
+}
+
+#mic_btn {
+	padding-top:10px;
+}
+
+#recording_btn{
+	position: relative;
+	padding-left: 10%;
+}
+
+#done_btn {
+	padding-top:15px;
+}
+

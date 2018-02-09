@@ -26,6 +26,9 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="/">WeCast</a>
+          <div class="page-title">
+            <p>Default Note</p>
+          </div>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -41,8 +44,70 @@
     </nav>
 
   <div class="container">
-    <img src="/pics/image-icon.png"> 
+    <!-- Everything Here-->
+    <div class="row"> <!-- recording bar --> 
+      <div class = "col-xs-2"></div>
+      <div class = "col-xs-8" id = "recording_status">
+        <img src = "/pics/recording_bar.png" width = "270" height = "170">
+      </div>
+      <div class = "col-xs-2"></div>
+
+    </div>
+    <div class="row"> <!-- recording time --> 
+      <div class = "col-xs-2"></div>
+      <div class = "col-xs-8" id = "recording_time">
+        <h2>4:20</h2>
+      </div>
+      <div class = "col-xs-2"></div>
+      
+    </div> 
+    <div class="row"> <!-- reminder -->
+      <div class = "col-xs-2"></div>
+      <div class = "col-xs-8" id = "reminder_title">
+        <img src = "/pics/reminder.png" width = "275" height = "34">
+      </div>
+      <div class = "col-xs-2"></div>
+      
+    </div>
+
+     <div class="row"> <!-- bookmark and camera button -->
+      <div class = "col-xs-3"></div>
+      <div class = "col-xs-3" id ="round_bookmark">
+        <img src = "/pics/round_bookmark.png" width = "70" height = "70">
+      </div>
+      <div class = "col-xs-3" id = "round_camera">
+        <img src = "/pics/round_camera.png" width = "70" height = "70">
+      </div>
+      <div class = "col-xs-3"></div>
+      
+     </div>
+
+     <div class = "row" id = "the_5th_row"> <!-- recording, audio, done button -->
+      <div class = "col-xs-4" id = "mic_btn">
+        <div class = "col-xs-2"></div>
+        <div class = "col-xs-2">
+          <img src = "/pics/round_audio.png" width = "70" height = "70">
+        </div>
+      </div>
+      <div class = "col-xs-4" id = "recording_btn">
+          <img src = "/pics/red_record.png" width = "80" height = "80"> 
+
+      </div>
+      <div class = "col-xs-4" id = "done_btn">
+        <div class = "col-xs-2">
+          <img src = "/pics/done_btn.png" width = "65" height = "55">
+        </div>
+        <div class = "col-xs-2"></div>
+      </div>
+     </div>
+
   </div>
+  <!-- back button -->
+  <div class = "back">
+    <a href = "/folder"><img src = "/pics/arrow.png" width="50" height = "50">
+  </div>
+  <!-- end of back button --> 
+
   <!--Scripts-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
