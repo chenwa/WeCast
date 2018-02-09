@@ -17,7 +17,10 @@
   line-height: 20px;
 }
 
-/* Make sure to comment */
+/* provides a margin to all headers in placeholder pages */
+.placeholder-title {
+	margin-left: 20px;
+}
 
 body { 
     padding-top: 65px; /* To make sure the nav doesn't cover the content */  
