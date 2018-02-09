@@ -15,7 +15,8 @@ var folder = require('./routes/folder');
 var profile = require('./routes/profile');
 var logout = require('./routes/logout');
 var help = require('./routes/help');
-var add_button = require('./routes/add_button');
+var add_function = require('./routes/add_function');
+var note_function = require('./routes/note_function');
 
 var app = express();
 
@@ -46,7 +47,8 @@ app.get('/folder', folder.view);
 app.get('/profile', profile.view);
 app.get('/help', help.view);
 app.get('/logout', logout.view);
-app.get('/add_button', add_button.view);
+app.get('/add_function', add_function.view);
+app.get('/note_function', note_function.view);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

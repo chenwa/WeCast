@@ -10,11 +10,8 @@
 }
 
 .page-title {
-  position:relative;
-  left:19%;
-  padding: 15px 15px;
-  font-size: 18px;
-  line-height: 20px;
+	margin-bottom: 30px;
+	text-align: center;
 }
 
 /* provides a margin to all headers in placeholder pages */
@@ -41,9 +38,8 @@ body {
 	margin-left: 20px;
 }
 #recording_status {
-	margin: auto;
-	width: 50%;
-	padding-top: 20%;
+	margin-left: 72px;
+/*	width: 50%; */
 }
 
 #recording_time {
