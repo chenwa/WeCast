@@ -30,7 +30,8 @@ body {
 }
 .back {
 	position:absolute;
-	bottom:0;
+	bottom:4%;
+	left: 5%;
 }
 
 .col-xs-4 span {
