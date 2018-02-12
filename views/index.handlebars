@@ -34,7 +34,7 @@
             <li><a href="/help">Help</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="./">Logout</a></li>
+            <li><a href="/logout">Logout</a></li>
           </ul>
         </div>
       </div>
@@ -42,6 +42,9 @@
 
 
   <div class="container">
+    <div class="page-title">
+      <h4>My Folders</h4>
+    </div>
     <div class="row">
       <div class="col-xs-6 form-group">
         <input type="text" class="form-control" id="filter" value="Search">
@@ -59,17 +62,22 @@
     <!-- start implementing handlebars for folders -->
     <div class="row">
       <div class="col-xs-4">
-       <a href="/folder"><img src="/pics/folder.png"></a>
+       <a href="/folder"><img src="/pics/blue_folder.png" width = "90" height = "90"></a>
+       <span>COGS 120 </span>
       </div> 
       <div class="col-xs-4">
-        <a href="/folder"><img src="/pics/folder.png"></a>
+      <a href="/folder"><img src="/pics/blue_folder.png"  width = "90" height = "90"></a> <span>Default</span>
       </div> 
       <div class="col-xs-4">
 
       </div> 
     </div>
-
   </div>
+  <!-- add button -->
+  <div class = "add">
+    <a href = "/add_function"><img src = "/pics/plus_btn.png" width="70" height = "70">
+  </div>
+  <!-- end of add button -->
   <!--Scripts-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="/js/bootstrap.min.js"></script>

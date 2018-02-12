@@ -34,13 +34,16 @@
             <li><a href="/help">Help</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="./">Logout</a></li>
+            <li><a href="/logout">Logout</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
   <div class="container">
+    <div class="page-title">
+      <h4>COGS 120</h4>
+    </div>
     <div class="row">
       <div class="col-xs-6 form-group">
         <input type="text" class="form-control" id="filter" value="Search">
@@ -56,17 +59,31 @@
     </div>
 
     <div class="row">
-      <div class="col-xs-5"><button type="button" class="btn btn-info btn-block">Lecture 2</button></div>
+      <div class="col-xs-5">
+        <a href= "/note"><button type="button" class="btn btn-info btn-block">Lecture 2</button></a>
+      </div>
       <div class="col-xs-5">02:00pm 02/08/2018</div>
       <div class="col-xs-2"></div>
     </div>
     <hr>
     <div class="row">
-      <div class="col-xs-5"><button type="button" class="btn btn-info btn-block">Lecture 1</button></div>
+      <div class="col-xs-5">
+        <a href = "/note"> <button type="button" class="btn btn-info btn-block">Lecture 1</button>
+        </a>
+        </div>
       <div class="col-xs-5">02:00pm 02/06/2018</div>
       <div class="col-xs-2"></div>
     </div>
   </div>
+
+  <div class = "back">
+    <a href = "/"><img src = "/pics/arrow.png" width="55" height = "55">
+  </div>
+  <!-- add button -->
+  <div class = "add">
+    <a href = "/"><img src = "/pics/plus_btn.png" width="70" height = "70">
+  </div>
+  <!-- end of add button -->
   <!--Scripts-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="/js/bootstrap.min.js"></script>

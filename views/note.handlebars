@@ -34,15 +34,78 @@
             <li><a href="/help">Help</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="./">Logout</a></li>
+            <li><a href="/logout">Logout</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
   <div class="container">
-    <img src="/pics/image-icon.png"> 
+    <div class="page-title">
+      <h4>Note Title</h4>
+    </div>
+    <!-- Everything Here -->
+    <div class="row"> <!-- recording bar --> 
+      <div id = "recording_status">
+        <img src = "/pics/recording_bar.png" width = "270" height = "170">
+      </div>
+    </div>
+
+    <div class="row"> <!-- recording time --> 
+      <div class = "col-xs-2"></div>
+      <div class = "col-xs-8" id = "recording_time">
+        <h2>4:20</h2>
+      </div>
+      <div class = "col-xs-2"></div>
+      
+    </div> 
+    <div class="row"> <!-- reminder -->
+      <div class = "col-xs-2"></div>
+      <div class = "col-xs-8" id = "reminder_title">
+        <img src = "/pics/reminder.png" width = "275" height = "34">
+      </div>
+      <div class = "col-xs-2"></div>
+      
+    </div>
+
+     <div class="row"> <!-- bookmark and camera button -->
+      <div class = "col-xs-3"></div>
+      <div class = "col-xs-3" id ="round_bookmark">
+        <a href = "/note_function"><img src = "/pics/round_bookmark.png" width = "70" height = "70"></a>
+      </div>
+      <div class = "col-xs-3" id = "round_camera">
+        <a href = "/note_function"><img src = "/pics/round_camera.png" width = "70" height = "70"></a>
+      </div>
+      <div class = "col-xs-3"></div>
+      
+     </div>
+
+     <div class = "row" id = "the_5th_row"> <!-- recording, audio, done button -->
+      <div class = "col-xs-4" id = "mic_btn">
+        <div class = "col-xs-2"></div>
+        <div class = "col-xs-2">
+          <a href = "/note_function"><img src = "/pics/round_audio.png" width = "70" height = "70"></a>
+        </div>
+      </div>
+      <div class = "col-xs-4" id = "recording_btn">
+          <a href = "/note_function"><img src = "/pics/red_record.png" width = "80" height = "80"></a>
+
+      </div>
+      <div class = "col-xs-4" id = "done_btn">
+        <div class = "col-xs-2">
+          <a href = "/note_function"><img src = "/pics/done_btn.png" width = "65" height = "55"></a>
+        </div>
+        <div class = "col-xs-2"></div>
+      </div>
+     </div>
+
   </div>
+  <!-- back button -->
+  <div class = "back">
+    <a href = "/folder"><img src = "/pics/arrow.png" width="55" height = "55">
+  </div>
+  <!-- end of back button --> 
+
   <!--Scripts-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
