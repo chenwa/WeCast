@@ -17,13 +17,18 @@ var logout = require('./routes/logout');
 var help = require('./routes/help');
 var add_function = require('./routes/add_function');
 var note_function = require('./routes/note_function');
+var addFolder = require('./routes/addFolder');
 
 var app = express();
 
 // all environments
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
-app.engine('handlebars', handlebars());
+
+app.engine('handlebars', handlebars({
+  helpers: require("./public/js/helpers.js").helpers,
+}));
+
 app.set('view engine', 'handlebars');
 app.use(express.favicon());
 app.use(express.logger('dev'));
@@ -49,6 +54,7 @@ app.get('/help', help.view);
 app.get('/logout', logout.view);
 app.get('/add_function', add_function.view);
 app.get('/note_function', note_function.view);
+app.get('/addFolder', addFolder.addFolder);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

@@ -60,24 +60,45 @@
     </div>
 
     <!-- start implementing handlebars for folders -->
-    <div class="row">
-      <div class="col-xs-4">
-       <a href="/folder"><img src="/pics/blue_folder.png" width = "90" height = "90"></a>
-       <span>COGS 120 </span>
-      </div> 
-      <div class="col-xs-4">
-      <a href="/folder"><img src="/pics/blue_folder.png"  width = "90" height = "90"></a> <span>Default</span>
-      </div> 
-      <div class="col-xs-4">
-
-      </div> 
+      <div class="row">
+      {{#each folders}}
+        <div class="col-xs-4">
+         <a href="/folder"><img src="/pics/blue_folder.png" width = "90" height = "90"></a>
+         <span>{{name}} </span>
+        </div> 
+    {{/each}}
+      </div>
     </div>
-  </div>
   <!-- add button -->
   <div class = "add">
-    <a href = "/add_function"><img src = "/pics/plus_btn.png" width="70" height = "70">
+    <a href="#addFolder" class="modal-toggle" data-toggle="modal" data-target="#addFolder"><img src = "/pics/plus_btn.png" width="70" height = "70"></a>
   </div>
   <!-- end of add button -->
+  <!-- Modal -->
+  <div class="modal fade" id="addFolder" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabel">New Folder</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="addFolderForm" role="form" method"get" action="/addFolder"> 
+            <div class="form-group">
+              <label for="name">Folder Name:</label>
+              <input type="text" class="form-control" id="name" placeholder="Name" name="name">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button submit" id="submitBtn" class="btn btn-primary">Create Folder</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
   <!--Scripts-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
