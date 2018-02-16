@@ -58,22 +58,17 @@
       </div> 
     </div>
 
-    <div class="row">
-      <div class="col-xs-5">
-        <a href= "/note"><button type="button" class="btn btn-info btn-block">Lecture 2</button></a>
-      </div>
-      <div class="col-xs-5">02:00pm 02/08/2018</div>
-      <div class="col-xs-2"></div>
+      <!-- start implementing handlebars for notes -->
+  <div class="row">
+    {{#each notes}}
+    <div class="col-xs-5">
+      <a href = "/note"> <button type="button" class="btn btn-info btn-block">{{name}}</button></a>
     </div>
+    <div class="col-xs-5">{{date}}  {{time}}</div>
+    <div class="col-xs-2"></div>
     <hr>
-    <div class="row">
-      <div class="col-xs-5">
-        <a href = "/note"> <button type="button" class="btn btn-info btn-block">Lecture 1</button>
-        </a>
-        </div>
-      <div class="col-xs-5">02:00pm 02/06/2018</div>
-      <div class="col-xs-2"></div>
-    </div>
+    {{/each}}
+  </div>
   </div>
 
   <div class = "back">
@@ -81,9 +76,34 @@
   </div>
   <!-- add button -->
   <div class = "add">
-    <a href = "/index"><img src = "/pics/plus_btn.png" width="70" height = "70">
+    <a href="#addNote" class="modal-toggle" data-toggle="modal" data-target="#addNote"><img src = "/pics/plus_btn.png" width="70" height = "70"></a>
   </div>
   <!-- end of add button -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="addNote" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabel">New Note</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="addNoteForm" role="form" method"get" action="/addNote"> 
+            <div class="form-group">
+              <input type="text" class="form-control" id="name" placeholder="Name" name="name">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button submit" id="submitBtn" class="btn btn-primary">Create Folder</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
   <!--Scripts-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="/js/bootstrap.min.js"></script>

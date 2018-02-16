@@ -71,7 +71,9 @@
      <div class="row"> <!-- bookmark and camera button -->
       <div class = "col-xs-3"></div>
       <div class = "col-xs-3" id ="round_bookmark">
-        <a href = "/note_function"><img src = "/pics/round_bookmark.png" width = "70" height = "70"></a>
+        <a href = "#bookmark" class="modal-toggle" data-toggle="modal" data-target="#bookmark">
+          <img src = "/pics/round_bookmark.png" width = "70" height = "70">
+        </a>
       </div>
       <div class = "col-xs-3" id = "round_camera">
         <a href="#camera" class="modal-toggle" data-toggle="modal" data-target="#camera">
@@ -128,6 +130,28 @@
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             <button id="savePhoto" type="button" data-dismiss="modal" class="btn btn-primary">Save Photo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for bookmark -->
+  <div class="modal fade" id="bookmark" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabel">Bookmark</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Added at 4:20</p>
+          <input type="text" class="form-control" id="filter" value="Add a note">
+          <div class="modal-footer">
+            <button id="savePhoto" type="button" data-dismiss="modal" class="btn btn-primary">Save Bookmark</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>

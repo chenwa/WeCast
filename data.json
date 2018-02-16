@@ -25,5 +25,18 @@
 			"sync": "ucsdcse170w218",
 			"folderID": "cse1702122018"			
 		}
+	],
+
+	"notes": [
+		{
+			"name": "Lecture 2",
+			"date": "2/16/2018",
+			"time": "2:00 PM"
+		},
+		{
+			"name": "Lecture 1",
+			"date": "2/16/2018",
+			"time": "3:15 PM"		
+		}
 	]
 }

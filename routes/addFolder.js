@@ -12,5 +12,6 @@ exports.addFolder = function(req, res) {
   console.log(data);
   res.render('index', {
     folders: data.folders,
+    notes: data.notes, 
   });
 };
