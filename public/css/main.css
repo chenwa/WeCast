@@ -33,6 +33,44 @@ body {
 	bottom:4%;
 	left: 5%;
 }
+/*login page layout */ 
+#login_center{ /*login text in the navbar */
+	width: 100%;
+	margin:auto;
+	margin-top: 5%;
+	text-align: center;
+	font-family: Lato;
+	font-size: 20px;
+	list-style-type: none;
+	> li {
+		float: none;
+		list-style-type: none;
+		display: inline-block;
+	}
+}
+
+#login_page {
+	margin: auto;
+	margin-top: 30%;
+}
+
+#login_id {
+	margin:auto;
+	margin-top: 10%;
+}
+
+#login_pw {
+	margin:auto;
+	margin-top: 5%;
+	padding-bottom: 10%;
+}
+
+#enter_btn {
+	margin: auto;
+	padding-top: 10%;
+}
+/* end of login page css */
+
 
 .col-xs-4 span {
 	margin-left: 20px;

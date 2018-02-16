@@ -1,0 +1,74 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>WeCast</title>	
+
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--CSS Files -->
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+ <!-- Navbar -->
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+         <ul class = "navbar-nav" id = "login_center">
+           <li class = "center">Login</li>
+         </ul>
+        </div>
+      </div>
+    </nav>
+
+  <!-- Content Goes here -->
+  <div class="container">
+    <div class="row">
+      <div class = "col-xs-4"></div>
+      <div class="col-xs-4" id = "login_page">
+        <img src = "/pics/temp_logo.png" width="100" height = "100"> <!-- temporary logo icon --> 
+        </div>
+      <div class = "col-xs-4"></div>
+    </div>
+
+    <div class = "login_info">
+      <div class = "row">
+        <div class = "col-xs-2"></div>
+        <div class = "col-xs-8 form-group" id = "login_id">
+          <label for = "exampleInputEmail">E-mail address</label>
+          <input type = "email" class = "form-control" id = "ex_input_email" name = "userid" placeholder="Enter e-mail">
+        </div>
+        <div class = "col-xs-2"></div>       
+      </div>
+
+      <div class = "row">
+        <div class = "col-xs-2"></div>
+        <div class = "col-xs-8" id = "login_pw">
+          <label for = "exampleInputPW">Password</label>
+          <input type = "password" class = "form-control" id = "ex_input_pw" name = "password" placeholder= "Enter password">
+        </div>
+        <div class = "col-xs-2"></div>
+      </div>
+
+      <div class = "row">
+        <div class = "col-xs-4"></div>
+        <div class = "col-xs-4">
+          <a href = "/index"><button type = "submit" class = "enter_btn" id = "submit">Submit</button></a>
+        </div>
+        <div class = "col-xs-4"></div>
+     </div>
+
+  </div>
+</div>
+  <!--Scripts-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/main.js"></script>
+
+</body>
+</html>

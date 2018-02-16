@@ -9,6 +9,7 @@ var path = require('path');
 var handlebars = require('express3-handlebars')
 
 //Routes
+var login = require('./routes/login'); //calling login.js
 var index = require('./routes/index');
 var note = require('./routes/note');
 var folder = require('./routes/folder');
@@ -45,8 +46,8 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-
-app.get('/', index.view);
+app.get('/', login.view); //login page
+app.get('/index', index.view);
 app.get('/note', note.view);
 app.get('/folder', folder.view);
 app.get('/profile', profile.view);
